@@ -1,0 +1,6 @@
+[
+  {"farm_id": "F001", "date": "2026-08-20", "moisture": 61.4, "ph": 6.7, "nitrogen": "Adequate"},
+  {"farm_id": "F002", "date": "2026-08-20", "moisture": 38.2, "ph": 6.2, "nitrogen": "Low"},
+  {"farm_id": "F006", "date": "2026-08-20", "moisture": 55.9, "ph": 7.1, "nitrogen": "Adequate"},
+  {"farm_id": "F008", "date": "2026-08-20", "moisture": 29.5, "ph": 6.8, "nitrogen": "Low"}
+]

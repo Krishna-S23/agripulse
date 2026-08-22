@@ -1,0 +1,261 @@
+:root {
+  --paper: #EFF1E6;
+  --paper-raised: #F8F9F2;
+  --ink: #1C2A1F;
+  --ink-soft: #4B5A4E;
+  --line: #CBD0BE;
+  --clay: #A85C32;
+  --sky: #3E7C97;
+  --gold: #B9862A;
+  --plum: #705C82;
+  --danger: #A83232;
+
+  --font-display: 'Zilla Slab', Georgia, serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 5rem;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 3px solid var(--ink);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+.header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.header .mark {
+  color: var(--clay);
+}
+.header .tagline {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+/* ---------- Field ledger (farm form) ---------- */
+.ledger {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 1.75rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.ledger::before {
+  content: "FARM PROFILE";
+  position: absolute;
+  top: -0.65rem;
+  left: 1.5rem;
+  background: var(--paper);
+  padding: 0 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-soft);
+}
+.ledger-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+.field { display: flex; flex-direction: column; gap: 0.35rem; }
+.field label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+.field input, .field select {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: white;
+  color: var(--ink);
+}
+.field input:focus, .field select:focus, button:focus-visible {
+  outline: 2px solid var(--sky);
+  outline-offset: 1px;
+}
+
+.actions { margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center; }
+
+.btn-primary {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-primary:hover { background: var(--clay); }
+.btn-primary:disabled { background: var(--line); color: var(--ink-soft); cursor: not-allowed; }
+
+.status-text { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); }
+.status-text.error { color: var(--danger); }
+
+/* ---------- Recommendation cards ---------- */
+.report-heading {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.rec-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--ink);
+  border-radius: 2px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.rec-card[data-type="IRRIGATION"] { border-left-color: var(--sky); }
+.rec-card[data-type="MARKET"] { border-left-color: var(--gold); }
+.rec-card[data-type="CROP_RISK"] { border-left-color: var(--plum); }
+
+.rec-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.rec-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+}
+.rec-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin: 0.2rem 0 0.5rem;
+}
+.confidence-dots {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
+.dot.filled { background: var(--clay); }
+
+.rec-explanation { font-size: 0.92rem; line-height: 1.5; color: var(--ink); margin: 0.4rem 0 0.75rem; }
+
+.evidence-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--sky);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.evidence-strip {
+  margin-top: 0.75rem;
+  background: var(--ink);
+  color: #D8DECF;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  padding: 0.75rem 1rem;
+  border-radius: 2px;
+  line-height: 1.7;
+}
+
+/* ---------- Ask box ---------- */
+.ask-box {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed var(--line);
+  position: relative;
+}
+.ask-box::before {
+  content: "ASK AGRIPULSE";
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.ask-form {
+  display: flex;
+  gap: 0.6rem;
+}
+.ask-form input {
+  flex: 1;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: white;
+  color: var(--ink);
+}
+.btn-small {
+  font-size: 0.85rem;
+  padding: 0.55rem 1rem;
+}
+.ask-answer {
+  margin-top: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+.ask-answer pre.evidence-strip {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0.75rem 0 0;
+}
+
+.empty-state {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding: 2rem 0;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 2px;
+}

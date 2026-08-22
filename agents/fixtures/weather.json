@@ -1,0 +1,6 @@
+[
+  {"date": "2026-08-20", "district": "Coimbatore", "temperature_c": 28.4, "rainfall_mm": 18.2, "humidity_pct": 84, "rain_prob_pct": 78, "rainfall_7day_avg": 9.6},
+  {"date": "2026-08-21", "district": "Coimbatore", "temperature_c": 27.1, "rainfall_mm": 22.5, "humidity_pct": 88, "rain_prob_pct": 82, "rainfall_7day_avg": 11.3},
+  {"date": "2026-08-20", "district": "Erode", "temperature_c": 31.2, "rainfall_mm": 2.1, "humidity_pct": 55, "rain_prob_pct": 15, "rainfall_7day_avg": 3.4},
+  {"date": "2026-08-20", "district": "Salem", "temperature_c": 29.8, "rainfall_mm": 6.4, "humidity_pct": 62, "rain_prob_pct": 30, "rainfall_7day_avg": 5.1}
+]

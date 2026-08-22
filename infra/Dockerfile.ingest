@@ -1,0 +1,16 @@
+# Separate lightweight image for the daily ingestion Cloud Run Job
+# (weather + market pulls). Build/deploy independently from the API service.
+#
+# Build:  gcloud builds submit --tag gcr.io/$PROJECT_ID/agripulse-ingest -f infra/Dockerfile.ingest ..
+# Deploy: gcloud run jobs create agripulse-ingest \
+#           --image gcr.io/$PROJECT_ID/agripulse-ingest \
+#           --region asia-south1 \
+#           --set-env-vars GCP_PROJECT_ID=$PROJECT_ID,BQ_DATASET=agripulse_data \
+#           --set-secrets DATA_GOV_IN_API_KEY=data-gov-in-key:latest
+FROM python:3.12-slim
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+COPY ingestion/ ./ingestion/
+WORKDIR /app/ingestion
+CMD ["sh", "-c", "python weather_ingest.py && python market_ingest.py"]
