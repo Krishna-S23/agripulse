@@ -31,7 +31,7 @@ from decision_engine import build_recommendations
 logger = logging.getLogger("agripulse.orchestrator")
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
 
 _RECOMMENDATION_COPY = {
     "DELAY_IRRIGATION": "Consider delaying irrigation",
@@ -125,17 +125,19 @@ Answer in 2-4 plain sentences:"""
 
 
 def _call_gemini(prompt: str) -> str:
-    if not GEMINI_API_KEY:
+    api_key = os.environ.get("GEMINI_API_KEY") or GEMINI_API_KEY
+    model_name = os.environ.get("GEMINI_MODEL") or GEMINI_MODEL or "gemini-3.6-flash"
+    if not api_key:
         return _fallback_explanation(prompt)
 
     try:
         import google.generativeai as genai
-        genai.configure(api_key=GEMINI_API_KEY)
-        model = genai.GenerativeModel(GEMINI_MODEL)
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel(model_name)
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:  # noqa: BLE001 - degrade gracefully in a demo
-        logger.error("Gemini call failed, falling back to template: %s", e)
+        logger.error("Gemini call failed (model=%s), falling back to template: %s", model_name, e)
         return _fallback_explanation(prompt)
 
 
