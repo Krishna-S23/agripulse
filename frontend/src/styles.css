@@ -35,12 +35,32 @@ body {
 
 /* ---------- Header ---------- */
 .header {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 3px solid var(--ink);
   padding-bottom: 1rem;
   margin-bottom: 2.5rem;
+  padding: 1.25rem 1.35rem 1.15rem;
+  border: 1px solid var(--line);
+  border-bottom: 4px solid var(--ink);
+  border-radius: 16px;
+  background: var(--paper-raised)
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80")
+    no-repeat 100% 42% / 48% auto;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 48%;
+  background: rgba(248, 249, 242, 0.62);
+  pointer-events: none;
+}
+.header > div {
+  position: relative;
+  z-index: 1;
 }
 .header h1 {
   font-family: var(--font-display);
@@ -64,7 +84,7 @@ body {
 .ledger {
   background: var(--paper-raised);
   border: 1px solid var(--line);
-  border-radius: 2px;
+  border-radius: 16px;
   padding: 1.75rem;
   margin-bottom: 2.5rem;
   position: relative;
@@ -110,7 +130,7 @@ body {
 }
 .field .form-select,
 .field .form-control {
-  border-radius: 2px;
+  border-radius: 12px;
   border-color: var(--line);
   color: var(--ink);
   box-shadow: none;
@@ -137,7 +157,7 @@ button:focus-visible {
   color: var(--paper);
   border: none;
   padding: 0.7rem 1.4rem;
-  border-radius: 2px;
+  border-radius: 12px;
   cursor: pointer;
   transition: background 0.15s ease;
 }
@@ -171,7 +191,7 @@ button:focus-visible {
   background: var(--paper-raised);
   border: 1px solid var(--line);
   border-left: 5px solid var(--ink);
-  border-radius: 2px;
+  border-radius: 16px;
   padding: 1.25rem 1.5rem;
   margin-bottom: 1rem;
   position: relative;
@@ -201,6 +221,21 @@ button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.rec-type-icon {
+  flex: 0 0 auto;
+}
+.rec-card[data-type="IRRIGATION"] .rec-type-icon {
+  color: var(--sky);
+}
+.rec-card[data-type="MARKET"] .rec-type-icon {
+  color: var(--gold);
+}
+.rec-card[data-type="CROP_RISK"] .rec-type-icon {
+  color: var(--plum);
 }
 .rec-title {
   font-family: var(--font-display);
@@ -216,6 +251,9 @@ button:focus-visible {
   font-size: 0.68rem;
   color: var(--ink-soft);
   white-space: nowrap;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
 }
 .dot {
   width: 7px;
@@ -252,7 +290,7 @@ button:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.76rem;
   padding: 0.75rem 1rem;
-  border-radius: 2px;
+  border-radius: 12px;
   line-height: 1.7;
 }
 
@@ -263,19 +301,47 @@ button:focus-visible {
   border-top: 1px dashed var(--line);
   position: relative;
 }
-.report-skeleton {
-  display: grid;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.skeleton-card {
-  display: block;
-  border-radius: 2px;
-  background: var(--line);
-}
 .agripulse-toast {
   font-family: var(--font-mono);
   border: 1px solid var(--clay);
+  border-radius: 12px !important;
+  box-shadow: 0 10px 24px rgba(28, 42, 31, 0.14);
+}
+.contextual-loader {
+  margin: 0 0 2rem;
+  padding: 1.4rem 1rem;
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  background: rgba(248, 249, 242, 0.72);
+}
+.contextual-loader-ask {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.contextual-loader-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.contextual-step {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-align: center;
+}
+.contextual-icon {
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border: 1px solid currentColor;
+  border-radius: 18px;
+  background: var(--paper);
 }
 .ask-box::before {
   content: "ASK AGRIPULSE";
@@ -296,7 +362,7 @@ button:focus-visible {
   font-size: 0.95rem;
   padding: 0.55rem 0.75rem;
   border: 1px solid var(--line);
-  border-radius: 2px;
+  border-radius: 12px;
   background: white;
   color: var(--ink);
 }
@@ -309,7 +375,7 @@ button:focus-visible {
   padding: 1rem 1.25rem;
   background: var(--paper-raised);
   border: 1px solid var(--line);
-  border-radius: 2px;
+  border-radius: 16px;
 }
 .ask-answer pre.evidence-strip {
   white-space: pre-wrap;
@@ -324,7 +390,7 @@ button:focus-visible {
   padding: 2rem 0;
   text-align: center;
   border: 1px dashed var(--line);
-  border-radius: 2px;
+  border-radius: 16px;
 }
 
 @media (min-width: 992px) {
@@ -351,7 +417,23 @@ button:focus-visible {
     display: block;
     margin-top: 0.35rem;
   }
+  .header {
+    background-size: 65% auto;
+  }
+  .header::after {
+    left: 35%;
+  }
   .actions .btn-primary {
     width: 100%;
+  }
+  .contextual-loader-track {
+    gap: 0.25rem;
+  }
+  .contextual-step {
+    font-size: 0.6rem;
+  }
+  .contextual-icon {
+    width: 2.8rem;
+    height: 2.8rem;
   }
 }

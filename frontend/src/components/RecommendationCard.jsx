@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Droplets, Sprout, TrendingUp } from "lucide-react";
 
 const CONFIDENCE_LEVELS = { LOW: 1, MEDIUM: 2, HIGH: 3 };
 
@@ -13,9 +14,16 @@ const TITLES = {
   MONITOR_CROP_CONDITION: "Monitor crop condition",
 };
 
+const TYPE_ICONS = {
+  IRRIGATION: Droplets,
+  MARKET: TrendingUp,
+  CROP_RISK: Sprout,
+};
+
 export default function RecommendationCard({ rec, index = 0 }) {
   const [showEvidence, setShowEvidence] = useState(false);
   const filledDots = CONFIDENCE_LEVELS[rec.confidence] || 1;
+  const TypeIcon = TYPE_ICONS[rec.recommendation_type] || Sprout;
 
   return (
     <motion.div
@@ -24,11 +32,16 @@ export default function RecommendationCard({ rec, index = 0 }) {
       initial={{ opacity: 0, y: 14 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, delay: index * 0.08 }}
-      whileHover={{ y: -3, boxShadow: "0 8px 18px rgba(28, 42, 31, 0.12)" }}
+      whileHover={{
+        y: -4,
+        scale: 1.01,
+        boxShadow: "0 12px 24px rgba(28, 42, 31, 0.14)",
+      }}
     >
       <div className="rec-top">
         <div>
           <div className="rec-label">
+            <TypeIcon className="rec-type-icon" size={16} aria-hidden="true" />
             {rec.recommendation_type.replace("_", " ")}
           </div>
           <div className="rec-title">

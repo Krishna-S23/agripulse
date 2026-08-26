@@ -4,6 +4,7 @@ import {
   useAgriPulseStore,
   useAskWorkflow,
 } from "../store/useAgriPulseStore.js";
+import ContextualLoader from "./ContextualLoader.jsx";
 
 export default function AskBox({ farmId }) {
   const [question, setQuestion] = useState("");
@@ -36,6 +37,8 @@ export default function AskBox({ farmId }) {
           {loading ? "Asking…" : "Ask"}
         </button>
       </form>
+
+      {loading && <ContextualLoader mode="ask" />}
 
       <AnimatePresence>
         {answer && (

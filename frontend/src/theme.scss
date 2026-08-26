@@ -11,9 +11,10 @@ $font-family-sans-serif:
   sans-serif;
 $font-family-monospace: "JetBrains Mono", "Courier New", monospace;
 $headings-font-family: "Zilla Slab", Georgia, serif;
-$border-radius: 2px;
-$border-radius-sm: 2px;
-$border-radius-lg: 2px;
+$border-radius: 0.75rem;
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1.25rem;
+$card-border-radius: 1rem;
 $input-btn-focus-box-shadow: 0 0 0 0.2rem rgba(62, 124, 151, 0.25);
 
 @import "bootstrap/scss/bootstrap";

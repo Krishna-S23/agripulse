@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Toaster, toast } from "react-hot-toast";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import FarmForm from "./components/FarmForm.jsx";
 import RecommendationCard from "./components/RecommendationCard.jsx";
 import AskBox from "./components/AskBox.jsx";
+import ContextualLoader from "./components/ContextualLoader.jsx";
 import {
   useAgriPulseStore,
   useReportWorkflow,
@@ -38,17 +37,7 @@ export default function App() {
 
       <FarmForm onSubmit={generateReport} loading={loading} />
 
-      {loading && (
-        <div
-          className="report-skeleton"
-          aria-label="Loading farm intelligence"
-          aria-live="polite"
-        >
-          {[1, 2, 3].map((item) => (
-            <Skeleton key={item} height={148} className="skeleton-card" />
-          ))}
-        </div>
-      )}
+      {loading && !report && <ContextualLoader mode="report" />}
 
       {report && (
         <section aria-live="polite">
