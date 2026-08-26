@@ -1,4 +1,8 @@
 [
   {"date": "2026-08-20", "crop": "Tomato", "market": "Coimbatore", "district": "Coimbatore", "modal_price": 2100, "prior_7day_avg_price": 1890, "pct_change_vs_prior_week": 11.1, "arrivals": 118},
-  {"date": "2026-08-20", "crop": "Onion", "market": "Coimbatore", "district": "Coimbatore", "modal_price": 1650, "prior_7day_avg_price": 1720, "pct_change_vs_prior_week": -4.1, "arrivals": 240}
+  {"date": "2026-08-20", "crop": "Onion", "market": "Coimbatore", "district": "Coimbatore", "modal_price": 1650, "prior_7day_avg_price": 1720, "pct_change_vs_prior_week": -4.1, "arrivals": 240},
+  {"date": "2026-08-20", "crop": "Tomato", "market": "Erode", "district": "Erode", "modal_price": 2250, "prior_7day_avg_price": 1980, "pct_change_vs_prior_week": 13.6, "arrivals": 95},
+  {"date": "2026-08-20", "crop": "Onion", "market": "Erode", "district": "Erode", "modal_price": 1580, "prior_7day_avg_price": 1780, "pct_change_vs_prior_week": -11.2, "arrivals": 310},
+  {"date": "2026-08-20", "crop": "Tomato", "market": "Salem", "district": "Salem", "modal_price": 2050, "prior_7day_avg_price": 1850, "pct_change_vs_prior_week": 10.8, "arrivals": 105},
+  {"date": "2026-08-20", "crop": "Onion", "market": "Salem", "district": "Salem", "modal_price": 1620, "prior_7day_avg_price": 1700, "pct_change_vs_prior_week": -4.7, "arrivals": 220}
 ]

@@ -1,0 +1,302 @@
+{
+  "F628C03": {
+    "farm_id": "F628C03",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": 2.0,
+    "growth_stage": "Flowering",
+    "soil_type": null,
+    "owner_name": null
+  },
+  "FF58E3A": {
+    "farm_id": "FF58E3A",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": null,
+    "soil_type": null,
+    "owner_name": null
+  },
+  "FC64C30": {
+    "farm_id": "FC64C30",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": null,
+    "soil_type": null,
+    "owner_name": null
+  },
+  "F6E4FCE": {
+    "farm_id": "F6E4FCE",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": 2.0,
+    "growth_stage": "Flowering",
+    "soil_type": null,
+    "owner_name": null
+  },
+  "FDF584F": {
+    "farm_id": "FDF584F",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": null,
+    "soil_type": null,
+    "owner_name": null
+  },
+  "F4C69A2": {
+    "farm_id": "F4C69A2",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": null,
+    "soil_type": null,
+    "owner_name": null
+  },
+  "F2BF842": {
+    "farm_id": "F2BF842",
+    "district": "Coimbatore",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": null,
+    "owner_name": null
+  },
+  "F6D243A": {
+    "farm_id": "F6D243A",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F983813": {
+    "farm_id": "F983813",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F6A5EAE": {
+    "farm_id": "F6A5EAE",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FA22F86": {
+    "farm_id": "FA22F86",
+    "district": "Salem",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FBBC415": {
+    "farm_id": "FBBC415",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": 10.0,
+    "growth_stage": "Nursery",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FF974D1": {
+    "farm_id": "FF974D1",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": 10.0,
+    "growth_stage": "Nursery",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FD10A4D": {
+    "farm_id": "FD10A4D",
+    "district": "Erode",
+    "location": null,
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": null,
+    "owner_name": null
+  },
+  "F5D246C": {
+    "farm_id": "F5D246C",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FD8C6AA": {
+    "farm_id": "FD8C6AA",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F7A8A93": {
+    "farm_id": "F7A8A93",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F4B61C8": {
+    "farm_id": "F4B61C8",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F09EC8A": {
+    "farm_id": "F09EC8A",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "F4E876E": {
+    "farm_id": "F4E876E",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FD7CE17": {
+    "farm_id": "FD7CE17",
+    "district": "Salem",
+    "location": "",
+    "crop": "Onion",
+    "area_acres": null,
+    "growth_stage": "Vegetative",
+    "soil_type": "",
+    "owner_name": null
+  },
+  "FD1A18F": {
+    "farm_id": "FD1A18F",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Red Loam",
+    "owner_name": null
+  },
+  "F01994A": {
+    "farm_id": "F01994A",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Laterite",
+    "owner_name": null
+  },
+  "FC42C24": {
+    "farm_id": "FC42C24",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": 10.0,
+    "growth_stage": "Flowering",
+    "soil_type": "Laterite",
+    "owner_name": null
+  },
+  "F25D8EA": {
+    "farm_id": "F25D8EA",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Red Loam",
+    "owner_name": null
+  },
+  "F393882": {
+    "farm_id": "F393882",
+    "district": "Salem",
+    "location": "",
+    "crop": "Onion",
+    "area_acres": 20.0,
+    "growth_stage": "Nursery",
+    "soil_type": "Alluvial",
+    "owner_name": null
+  },
+  "FB5B813": {
+    "farm_id": "FB5B813",
+    "district": "Erode",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": 20.0,
+    "growth_stage": "Flowering",
+    "soil_type": "Black Soil",
+    "owner_name": null
+  },
+  "F8477D3": {
+    "farm_id": "F8477D3",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Red Loam",
+    "owner_name": null
+  },
+  "FDF9469": {
+    "farm_id": "FDF9469",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Red Loam",
+    "owner_name": null
+  },
+  "F9F99CD": {
+    "farm_id": "F9F99CD",
+    "district": "Coimbatore",
+    "location": "",
+    "crop": "Tomato",
+    "area_acres": null,
+    "growth_stage": "Flowering",
+    "soil_type": "Red Loam",
+    "owner_name": null
+  }
+}
