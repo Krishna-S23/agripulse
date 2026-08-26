@@ -62,7 +62,13 @@ def _run_mock(params: dict) -> list[dict]:
         data = json.load(f)
     # allow fixtures to be filtered by farm_id/district if present in params
     if "farm_id" in params:
-        data = [r for r in data if r.get("farm_id") == params["farm_id"]]
+        filtered = [r for r in data if r.get("farm_id") == params["farm_id"]]
+        if not filtered and mock_key == "soil" and params["farm_id"] != "F999" and data:
+            # Fall back to first soil fixture for dynamically created UI farms
+            default_row = dict(data[0])
+            default_row["farm_id"] = params["farm_id"]
+            filtered = [default_row]
+        data = filtered
     if "district" in params:
         data = [r for r in data if r.get("district") == params["district"]]
     if "crop" in params:
