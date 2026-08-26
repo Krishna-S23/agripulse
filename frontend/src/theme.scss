@@ -1,0 +1,19 @@
+$primary: #1c2a1f;
+$secondary: #a85c32;
+$success: #3e7c97;
+$warning: #b9862a;
+$danger: #a83232;
+$body-bg: #eff1e6;
+$body-color: #1c2a1f;
+$font-family-sans-serif:
+  "Inter",
+  -apple-system,
+  sans-serif;
+$font-family-monospace: "JetBrains Mono", "Courier New", monospace;
+$headings-font-family: "Zilla Slab", Georgia, serif;
+$border-radius: 2px;
+$border-radius-sm: 2px;
+$border-radius-lg: 2px;
+$input-btn-focus-box-shadow: 0 0 0 0.2rem rgba(62, 124, 151, 0.25);
+
+@import "bootstrap/scss/bootstrap";

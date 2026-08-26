@@ -1,27 +1,21 @@
-import { useState } from 'react';
-import { api } from '../api.js';
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  useAgriPulseStore,
+  useAskWorkflow,
+} from "../store/useAgriPulseStore.js";
 
 export default function AskBox({ farmId }) {
-  const [question, setQuestion] = useState('');
-  const [answer, setAnswer] = useState(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [question, setQuestion] = useState("");
   const [showEvidence, setShowEvidence] = useState(false);
+  const answer = useAgriPulseStore((state) => state.askAnswer);
+  const error = useAgriPulseStore((state) => state.error);
+  const { askQuestion, loading } = useAskWorkflow();
 
   const handleAsk = async (e) => {
     e.preventDefault();
     if (!question.trim()) return;
-    setLoading(true);
-    setError(null);
-    setAnswer(null);
-    try {
-      const result = await api.ask(farmId, question);
-      setAnswer(result);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+    askQuestion(question.trim());
   };
 
   return (
@@ -34,24 +28,39 @@ export default function AskBox({ farmId }) {
           placeholder="e.g. Should I irrigate tomorrow?"
           aria-label="Ask AgriPulse a question about this farm"
         />
-        <button className="btn-primary btn-small" type="submit" disabled={loading}>
-          {loading ? 'Asking…' : 'Ask'}
+        <button
+          className="btn-primary btn-small"
+          type="submit"
+          disabled={loading}
+        >
+          {loading ? "Asking…" : "Ask"}
         </button>
       </form>
 
-      {error && <div className="status-text error">Error: {error}</div>}
-
-      {answer && (
-        <div className="ask-answer">
-          <p className="rec-explanation">{answer.answer}</p>
-          <button className="evidence-toggle" onClick={() => setShowEvidence(!showEvidence)}>
-            {showEvidence ? 'Hide evidence used' : 'View evidence used →'}
-          </button>
-          {showEvidence && (
-            <pre className="evidence-strip">{JSON.stringify(answer.evidence_used, null, 2)}</pre>
-          )}
-        </div>
-      )}
+      <AnimatePresence>
+        {answer && (
+          <motion.div
+            className="ask-answer"
+            aria-live="polite"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+          >
+            <p className="rec-explanation">{answer.answer}</p>
+            <button
+              className="evidence-toggle"
+              onClick={() => setShowEvidence(!showEvidence)}
+            >
+              {showEvidence ? "Hide evidence used" : "View evidence used →"}
+            </button>
+            {showEvidence && (
+              <pre className="evidence-strip">
+                {JSON.stringify(answer.evidence_used, null, 2)}
+              </pre>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

@@ -9,8 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.102.5",
+    "bootstrap": "^5.3.8",
+    "framer-motion": "^13.1.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-loading-skeleton": "^3.5.0",
+    "sass": "^1.103.1",
+    "zustand": "^5.0.15"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",

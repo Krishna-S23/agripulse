@@ -1,21 +1,23 @@
 :root {
-  --paper: #EFF1E6;
-  --paper-raised: #F8F9F2;
-  --ink: #1C2A1F;
-  --ink-soft: #4B5A4E;
-  --line: #CBD0BE;
-  --clay: #A85C32;
-  --sky: #3E7C97;
-  --gold: #B9862A;
-  --plum: #705C82;
-  --danger: #A83232;
+  --paper: #eff1e6;
+  --paper-raised: #f8f9f2;
+  --ink: #1c2a1f;
+  --ink-soft: #4b5a4e;
+  --line: #cbd0be;
+  --clay: #a85c32;
+  --sky: #3e7c97;
+  --gold: #b9862a;
+  --plum: #705c82;
+  --danger: #a83232;
 
-  --font-display: 'Zilla Slab', Georgia, serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-display: "Zilla Slab", Georgia, serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -26,7 +28,7 @@ body {
 }
 
 .app {
-  max-width: 880px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 2.5rem 1.5rem 5rem;
 }
@@ -80,12 +82,15 @@ body {
   color: var(--ink-soft);
 }
 .ledger-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem 1.25rem;
+  --bs-gutter-x: 1.25rem;
+  --bs-gutter-y: 1rem;
   margin-top: 0.5rem;
 }
-.field { display: flex; flex-direction: column; gap: 0.35rem; }
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
 .field label {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -93,7 +98,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--ink-soft);
 }
-.field input, .field select {
+.field input,
+.field select {
   font-family: var(--font-body);
   font-size: 0.95rem;
   padding: 0.5rem 0.6rem;
@@ -102,12 +108,26 @@ body {
   background: white;
   color: var(--ink);
 }
-.field input:focus, .field select:focus, button:focus-visible {
+.field .form-select,
+.field .form-control {
+  border-radius: 2px;
+  border-color: var(--line);
+  color: var(--ink);
+  box-shadow: none;
+}
+.field input:focus,
+.field select:focus,
+button:focus-visible {
   outline: 2px solid var(--sky);
   outline-offset: 1px;
 }
 
-.actions { margin-top: 1.5rem; display: flex; gap: 0.75rem; align-items: center; }
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
 
 .btn-primary {
   font-family: var(--font-display);
@@ -121,11 +141,23 @@ body {
   cursor: pointer;
   transition: background 0.15s ease;
 }
-.btn-primary:hover { background: var(--clay); }
-.btn-primary:disabled { background: var(--line); color: var(--ink-soft); cursor: not-allowed; }
+.btn-primary:hover {
+  background: var(--clay);
+}
+.btn-primary:disabled {
+  background: var(--line);
+  color: var(--ink-soft);
+  cursor: not-allowed;
+}
 
-.status-text { font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); }
-.status-text.error { color: var(--danger); }
+.status-text {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+.status-text.error {
+  color: var(--danger);
+}
 
 /* ---------- Recommendation cards ---------- */
 .report-heading {
@@ -144,9 +176,18 @@ body {
   margin-bottom: 1rem;
   position: relative;
 }
-.rec-card[data-type="IRRIGATION"] { border-left-color: var(--sky); }
-.rec-card[data-type="MARKET"] { border-left-color: var(--gold); }
-.rec-card[data-type="CROP_RISK"] { border-left-color: var(--plum); }
+.recommendation-list {
+  --bs-gutter-y: 1rem;
+}
+.rec-card[data-type="IRRIGATION"] {
+  border-left-color: var(--sky);
+}
+.rec-card[data-type="MARKET"] {
+  border-left-color: var(--gold);
+}
+.rec-card[data-type="CROP_RISK"] {
+  border-left-color: var(--plum);
+}
 
 .rec-top {
   display: flex;
@@ -176,10 +217,22 @@ body {
   color: var(--ink-soft);
   white-space: nowrap;
 }
-.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
-.dot.filled { background: var(--clay); }
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--line);
+}
+.dot.filled {
+  background: var(--clay);
+}
 
-.rec-explanation { font-size: 0.92rem; line-height: 1.5; color: var(--ink); margin: 0.4rem 0 0.75rem; }
+.rec-explanation {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0.4rem 0 0.75rem;
+}
 
 .evidence-toggle {
   font-family: var(--font-mono);
@@ -195,7 +248,7 @@ body {
 .evidence-strip {
   margin-top: 0.75rem;
   background: var(--ink);
-  color: #D8DECF;
+  color: #d8decf;
   font-family: var(--font-mono);
   font-size: 0.76rem;
   padding: 0.75rem 1rem;
@@ -209,6 +262,20 @@ body {
   padding-top: 1.5rem;
   border-top: 1px dashed var(--line);
   position: relative;
+}
+.report-skeleton {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.skeleton-card {
+  display: block;
+  border-radius: 2px;
+  background: var(--line);
+}
+.agripulse-toast {
+  font-family: var(--font-mono);
+  border: 1px solid var(--clay);
 }
 .ask-box::before {
   content: "ASK AGRIPULSE";
@@ -258,4 +325,33 @@ body {
   text-align: center;
   border: 1px dashed var(--line);
   border-radius: 2px;
+}
+
+@media (min-width: 992px) {
+  .ask-box {
+    position: sticky;
+    bottom: 1rem;
+    z-index: 2;
+    background: var(--paper);
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .app {
+    padding: 1.5rem 1rem 4rem;
+  }
+  .ledger {
+    padding: 1.25rem 1rem;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .header .tagline {
+    display: block;
+    margin-top: 0.35rem;
+  }
+  .actions .btn-primary {
+    width: 100%;
+  }
 }
