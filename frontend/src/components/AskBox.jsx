@@ -10,7 +10,6 @@ export default function AskBox({ farmId }) {
   const [question, setQuestion] = useState("");
   const [showEvidence, setShowEvidence] = useState(false);
   const answer = useAgriPulseStore((state) => state.askAnswer);
-  const error = useAgriPulseStore((state) => state.error);
   const { askQuestion, loading } = useAskWorkflow();
 
   const handleAsk = async (e) => {
@@ -26,7 +25,7 @@ export default function AskBox({ farmId }) {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          placeholder="e.g. Should I irrigate tomorrow?"
+          placeholder="Ask AgriPulse a question about this farm (e.g., Should I irrigate tomorrow?)"
           aria-label="Ask AgriPulse a question about this farm"
         />
         <button

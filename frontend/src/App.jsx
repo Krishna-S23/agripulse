@@ -9,6 +9,8 @@ import {
   useAgriPulseStore,
   useReportWorkflow,
 } from "./store/useAgriPulseStore.js";
+import fieldImage from "./assets/greenish_field.jpg";
+import headerImage from "./assets/land_tractor.jpg";
 
 export default function App() {
   const { report, farmId, loading, error } = useAgriPulseStore();
@@ -19,7 +21,7 @@ export default function App() {
   }, [error]);
 
   return (
-    <div className="app">
+    <div className="app" style={{ "--field-image": `url(${fieldImage})` }}>
       <Toaster
         position="top-right"
         toastOptions={{ className: "agripulse-toast" }}
@@ -27,12 +29,18 @@ export default function App() {
       <header className="header">
         <div>
           <h1>
-            Agri<span className="mark">Pulse</span>
+            <span className="agri">Agri</span>
+            <span className="pulse-p">P</span>
+            <span className="pulse-u">u</span>
+            <span className="pulse-l">l</span>
+            <span className="pulse-s">s</span>
+            <span className="pulse-e">e</span>
           </h1>
           <div className="tagline">
             From fragmented farm data to explainable decisions
           </div>
         </div>
+        <img src={headerImage} alt="Farm" className="header-image" />
       </header>
 
       <FarmForm onSubmit={generateReport} loading={loading} />
@@ -42,7 +50,7 @@ export default function App() {
       {report && (
         <section aria-live="polite">
           <h2 className="report-heading">
-            Today's Farm Intelligence — {report.crop} · {report.district}
+            Today's Farm Intelligence - {report.crop} 📍 {report.district}
           </h2>
           {report.recommendations.length === 0 ? (
             <div className="empty-state">
@@ -52,19 +60,13 @@ export default function App() {
             <Row className="recommendation-list">
               {report.recommendations.map((rec, i) => (
                 <Col xs={12} key={i}>
-                  <RecommendationCard rec={rec} index={i} />
+                  <RecommendationCard rec={rec} crop={report.crop} index={i} />
                 </Col>
               ))}
             </Row>
           )}
           <AskBox farmId={farmId} />
         </section>
-      )}
-
-      {!report && !loading && !error && (
-        <div className="status-text">
-          Fill in a farm profile above and generate today's report.
-        </div>
       )}
     </div>
   );

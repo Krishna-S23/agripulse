@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
+import formImage from "../assets/sunrise_and_field.jpg";
 
 const DISTRICTS = ["Coimbatore", "Erode", "Salem"];
 const CROPS = ["Tomato", "Onion"];
@@ -42,7 +43,11 @@ export default function FarmForm({ onSubmit, loading }) {
   };
 
   return (
-    <form className="ledger" onSubmit={handleSubmit}>
+    <form
+      className="ledger"
+      onSubmit={handleSubmit}
+      style={{ "--form-image": `url(${formImage})` }}
+    >
       <Row className="ledger-grid">
         <Col xs={12} sm={6} className="field">
           <Form.Label htmlFor="district">District</Form.Label>

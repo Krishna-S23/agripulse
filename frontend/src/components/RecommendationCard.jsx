@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Droplets, Sprout, TrendingUp } from "lucide-react";
+import tomatoImage from "../assets/tomato.jpg";
+import onionImage from "../assets/onion.jpg";
+import cycleImage from "../assets/agri_cycle.jpg";
 
 const CONFIDENCE_LEVELS = { LOW: 1, MEDIUM: 2, HIGH: 3 };
 
@@ -20,10 +23,17 @@ const TYPE_ICONS = {
   CROP_RISK: Sprout,
 };
 
-export default function RecommendationCard({ rec, index = 0 }) {
+export default function RecommendationCard({ rec, crop, index = 0 }) {
   const [showEvidence, setShowEvidence] = useState(false);
   const filledDots = CONFIDENCE_LEVELS[rec.confidence] || 1;
   const TypeIcon = TYPE_ICONS[rec.recommendation_type] || Sprout;
+  const cropName = crop?.toLowerCase();
+  const cardImage =
+    cropName === "onion"
+      ? onionImage
+      : cropName === "tomato"
+        ? tomatoImage
+        : cycleImage;
 
   return (
     <motion.div
