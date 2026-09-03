@@ -10,7 +10,6 @@ import {
   useReportWorkflow,
 } from "./store/useAgriPulseStore.js";
 import fieldImage from "./assets/greenish_field.jpg";
-import headerImage from "./assets/land_tractor.jpg";
 
 export default function App() {
   const { report, farmId, loading, error } = useAgriPulseStore();
@@ -40,7 +39,6 @@ export default function App() {
             From fragmented farm data to explainable decisions
           </div>
         </div>
-        <img src={headerImage} alt="Farm" className="header-image" />
       </header>
 
       <FarmForm onSubmit={generateReport} loading={loading} />
