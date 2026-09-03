@@ -11,7 +11,7 @@ Endpoints:
     GET  /farm/{farm_id}       -> fetch a farm profile
     GET  /farms                -> list all farm profiles
     GET  /intelligence/{farm_id} -> today's prioritized intelligence report
-    POST /ask                  -> free-text question routed through agents + Gemini
+    POST /ask                  -> free-text question routed through agents + Vertex AI
     GET  /health                -> liveness check for Cloud Run
 """
 import sys

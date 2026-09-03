@@ -3,17 +3,16 @@ AgriPulse Orchestrator.
 
 Flow:
   farm profile -> call relevant agents -> Decision Engine (rules) ->
-  Gemini (explains + phrases the already-decided recommendations) -> response
+  Vertex AI (explains + phrases the already-decided recommendations) -> response
 
-Gemini NEVER invents the recommendation — it only explains evidence that the
+Vertex AI NEVER invents the recommendation — it only explains evidence that the
 Decision Engine already produced. This keeps every output auditable.
 
-Uses google-generativeai (Gemini API, API-key based) for simplicity. If you
-prefer Vertex AI / ADK's native model routing, swap `_call_gemini` for a
-`vertexai.generative_models.GenerativeModel` call — same prompt, same
-contract (must return plain text).
+Uses Vertex AI (google-cloud-aiplatform) with Application Default Credentials
+for GCP-native authentication. No API key needed — authentication is handled
+automatically by service account or gcloud login.
 
-If GEMINI_API_KEY is not set, falls back to a template-based explanation so
+If credentials are not available, falls back to a template-based explanation so
 the whole pipeline still runs end-to-end without any LLM credentials.
 """
 import os
@@ -30,8 +29,9 @@ from decision_engine import build_recommendations
 
 logger = logging.getLogger("agripulse.orchestrator")
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
+GCP_PROJECT_ID = os.environ.get("GCP_PROJECT_ID", "")
+GCP_REGION = os.environ.get("GCP_REGION", "us-central1")
+VERTEX_AI_MODEL = os.environ.get("VERTEX_AI_MODEL", "gemini-2.0-flash")
 
 _RECOMMENDATION_COPY = {
     "DELAY_IRRIGATION": "Consider delaying irrigation",
@@ -71,7 +71,7 @@ def get_today_intelligence(farm: dict) -> dict:
 
 def answer_question(farm: dict, question: str) -> dict:
     """Handles free-text questions by routing to the relevant agents based
-    on keyword matching, then asking Gemini to answer using only that
+    on keyword matching, then asking Vertex AI to answer using only that
     evidence. Simple deterministic routing keeps this auditable too — no
     LLM-driven tool selection for the MVP."""
     q = question.lower()
@@ -88,13 +88,13 @@ def answer_question(farm: dict, question: str) -> dict:
         evidence["soil"] = get_soil_signal(farm["farm_id"])
         evidence["market"] = get_market_signal(farm["crop"], farm["district"])
 
-    answer = _call_gemini(_build_qa_prompt(question, evidence))
+    answer = _call_vertex_ai(_build_qa_prompt(question, evidence))
     return {"question": question, "answer": answer, "evidence_used": evidence}
 
 
 def _explain(rec: dict, farm: dict) -> str:
     prompt = _build_explanation_prompt(rec, farm)
-    return _call_gemini(prompt)
+    return _call_vertex_ai(prompt)
 
 
 def _build_explanation_prompt(rec: dict, farm: dict) -> str:
@@ -124,27 +124,37 @@ Evidence: {json.dumps(evidence, indent=2)}
 Answer in 2-4 plain sentences:"""
 
 
-def _call_gemini(prompt: str) -> str:
-    api_key = os.environ.get("GEMINI_API_KEY") or GEMINI_API_KEY
-    model_name = os.environ.get("GEMINI_MODEL") or GEMINI_MODEL or "gemini-3.6-flash"
-    if not api_key:
+def _call_vertex_ai(prompt: str) -> str:
+    project_id = os.environ.get("GCP_PROJECT_ID") or GCP_PROJECT_ID
+    region = os.environ.get("GCP_REGION") or GCP_REGION
+    model_name = os.environ.get("VERTEX_AI_MODEL") or VERTEX_AI_MODEL
+
+    if not project_id:
+        logger.warning("GCP_PROJECT_ID not set, falling back to template explanation")
         return _fallback_explanation(prompt)
 
     try:
-        import google.generativeai as genai
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel(model_name)
+        import vertexai
+        from vertexai.generative_models import GenerativeModel
+
+        vertexai.init(project=project_id, location=region)
+        model = GenerativeModel(model_name)
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:  # noqa: BLE001 - degrade gracefully in a demo
-        logger.error("Gemini call failed (model=%s), falling back to template: %s", model_name, e)
+        logger.error("Vertex AI call failed (model=%s, project=%s): %s", model_name, project_id, e)
         return _fallback_explanation(prompt)
 
 
+def _call_gemini(prompt: str) -> str:
+    """Deprecated: use _call_vertex_ai instead. Kept for backwards compatibility."""
+    return _call_vertex_ai(prompt)
+
+
 def _fallback_explanation(prompt: str) -> str:
-    """Used when no GEMINI_API_KEY is set, or the API call fails — keeps the
+    """Used when GCP credentials are unavailable or Vertex AI call fails — keeps the
     demo alive even if the LLM is unavailable."""
-    return ("[Template explanation — set GEMINI_API_KEY for full natural-language "
+    return ("[Template explanation — set GCP_PROJECT_ID and GCP_REGION for full natural-language "
             "output] Based on current evidence, please review the flagged data points "
             "for this recommendation.")
 
