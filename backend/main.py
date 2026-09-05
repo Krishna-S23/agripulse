@@ -30,7 +30,7 @@ sys.path.append(str(Path(__file__).parent.parent / "agents"))
 
 from models import FarmCreateRequest, AskRequest  # noqa: E402
 import farm_store  # noqa: E402
-from orchestrator import get_today_intelligence, answer_question  # noqa: E402
+from orchestrator import get_today_intelligence, answer_question, get_vertex_ai_status  # noqa: E402
 
 app = FastAPI(title="AgriPulse API", version="1.0.0")
 
@@ -45,6 +45,12 @@ app.add_middleware(
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
+
+@app.get("/health/vertex-ai")
+def vertex_ai_health():
+    """Report whether Vertex AI is configured without generating billable content."""
+    return get_vertex_ai_status()
 
 
 @app.post("/farm")

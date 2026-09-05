@@ -1,7 +1,7 @@
 # AgriPulse
 
 Evidence-first agricultural decision intelligence for Coimbatore, Erode, and
-Salem (Tomato + Onion). Data → BigQuery → deterministic agents → Gemini
+Salem (Tomato + Onion). Data → BigQuery → deterministic agents → Vertex AI
 explanation → React UI.
 
 This repo is organized by the same phases as the build plan:
@@ -73,9 +73,10 @@ finds `.env` automatically regardless of which subfolder you run commands from.
 ```bash
 cp .env.example .env
 # then edit .env and fill in real values, e.g.:
-#   GEMINI_API_KEY=AIza...
 #   DATA_GOV_IN_API_KEY=579b464...
 #   GCP_PROJECT_ID=your-project-id
+#   GCP_REGION=us-central1
+#   VERTEX_AI_MODEL=gemini-2.0-flash
 #   AGRIPULSE_MOCK_DATA=0
 ```
 
@@ -88,6 +89,7 @@ uvicorn main:app --reload --port 8080   # picks up .env automatically
 ```
 
 **Notes:**
+
 - `.env` is gitignored by convention — never commit real keys. Add a `.gitignore`
   with a `.env` line if you're pushing this to GitHub (not included by default).
 - A value already set in your shell (`export FOO=bar`) takes priority over
@@ -104,8 +106,9 @@ uvicorn main:app --reload --port 8080   # picks up .env automatically
 
 ```bash
 gcloud config set project YOUR_PROJECT_ID
-gcloud services enable bigquery.googleapis.com storage.googleapis.com \
+gcloud services enable aiplatform.googleapis.com bigquery.googleapis.com storage.googleapis.com \
   firestore.googleapis.com run.googleapis.com cloudscheduler.googleapis.com
+gcloud auth application-default login
 gsutil mb -l asia-south1 gs://agripulse-raw
 gsutil mb -l asia-south1 gs://agripulse-processed
 ```
@@ -124,14 +127,15 @@ bq query --use_legacy_sql=false < infra/synthetic_seed_data.sql
 
 ### 4. Get API keys
 
-- **Gemini**: create a key at https://aistudio.google.com/apikey → set `GEMINI_API_KEY`
+- **Vertex AI**: enable `aiplatform.googleapis.com`, run `gcloud auth application-default login`
+  locally, and grant the runtime service account `roles/aiplatform.user` in Cloud Run
 - **data.gov.in** (Agmarknet market prices): register at https://data.gov.in → set `DATA_GOV_IN_API_KEY`
 
 ### 5. Run ingestion for real weather + market data
 
 ```bash
 cd ingestion
-export GCP_PROJECT_ID=your-project GEMINI_API_KEY=... DATA_GOV_IN_API_KEY=...
+export GCP_PROJECT_ID=your-project DATA_GOV_IN_API_KEY=...
 python weather_ingest.py
 python market_ingest.py
 # crop_history is annual — download the CSV from data.gov.in first, then:
@@ -143,7 +147,8 @@ RAW_CSV_PATH=/path/to/download.csv python crop_history_ingest.py
 ```bash
 export AGRIPULSE_MOCK_DATA=0
 export GCP_PROJECT_ID=your-project
-export GEMINI_API_KEY=...
+export GCP_REGION=us-central1
+export VERTEX_AI_MODEL=gemini-2.0-flash
 ```
 
 ## Deployment (Cloud Run)

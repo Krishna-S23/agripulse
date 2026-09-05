@@ -3,7 +3,7 @@ Weather Agent — analyzes rainfall/temperature/humidity signals for a
 district and flags anything relevant to irrigation or crop risk decisions.
 
 This is a "tool function" — plain Python, no LLM call inside it. It returns
-structured evidence. The Orchestrator hands this evidence to Gemini for
+structured evidence. The Orchestrator hands this evidence to Vertex AI for
 explanation later; the agent itself must stay deterministic and auditable.
 """
 from bq_helper import run_query

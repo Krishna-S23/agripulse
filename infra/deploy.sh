@@ -14,6 +14,7 @@ gcloud services enable \
   bigquery.googleapis.com \
   storage.googleapis.com \
   firestore.googleapis.com \
+  aiplatform.googleapis.com \
   cloudscheduler.googleapis.com \
   --project "$PROJECT_ID"
 
@@ -29,8 +30,8 @@ gcloud run deploy "$SERVICE_NAME" \
   --region "$REGION" \
   --project "$PROJECT_ID" \
   --allow-unauthenticated \
-  --set-env-vars "GCP_PROJECT_ID=${PROJECT_ID},BQ_DATASET=agripulse_data,AGRIPULSE_MOCK_DATA=0" \
-  --set-secrets "GEMINI_API_KEY=gemini-api-key:latest,DATA_GOV_IN_API_KEY=data-gov-in-key:latest"
+  --set-env-vars "GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},VERTEX_AI_MODEL=${VERTEX_AI_MODEL:-gemini-2.0-flash},BQ_DATASET=agripulse_data,AGRIPULSE_MOCK_DATA=0" \
+  --set-secrets "DATA_GOV_IN_API_KEY=data-gov-in-key:latest"
 
 SERVICE_URL=$(gcloud run services describe "$SERVICE_NAME" \
   --region "$REGION" --project "$PROJECT_ID" --format='value(status.url)')

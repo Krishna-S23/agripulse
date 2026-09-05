@@ -29,9 +29,9 @@ from decision_engine import build_recommendations
 
 logger = logging.getLogger("agripulse.orchestrator")
 
-GCP_PROJECT_ID = os.environ.get("GCP_PROJECT_ID", "")
-GCP_REGION = os.environ.get("GCP_REGION", "us-central1")
-VERTEX_AI_MODEL = os.environ.get("VERTEX_AI_MODEL", "gemini-2.0-flash")
+GCP_PROJECT_ID = os.environ.get("GCP_PROJECT_ID", "agripulse-506505")
+GCP_REGION = os.environ.get("GCP_REGION", "asia-south1")
+VERTEX_AI_MODEL = os.environ.get("VERTEX_AI_MODEL", "gemini-2.5-flash")
 
 _RECOMMENDATION_COPY = {
     "DELAY_IRRIGATION": "Consider delaying irrigation",
@@ -42,6 +42,38 @@ _RECOMMENDATION_COPY = {
     "MONITOR_MARKET": "Keep monitoring the market",
     "MONITOR_CROP_CONDITION": "Monitor crop conditions closely",
 }
+
+
+def get_vertex_ai_status() -> dict:
+    """Return the local Vertex AI configuration without making an API call."""
+    project_id = os.environ.get("GCP_PROJECT_ID") or GCP_PROJECT_ID
+    region = os.environ.get("GCP_REGION") or GCP_REGION
+    model_name = os.environ.get("VERTEX_AI_MODEL") or VERTEX_AI_MODEL
+    configured = bool(project_id and project_id != "your-gcp-project-id")
+
+    try:
+        import vertexai  # noqa: F401
+        sdk_installed = True
+    except ImportError:
+        sdk_installed = False
+
+    try:
+        import google.auth
+        google.auth.default(quota_project_id=project_id or None)
+        credentials_available = True
+    except Exception:  # noqa: BLE001 - status endpoint must remain non-fatal
+        credentials_available = False
+
+    return {
+        "enabled": configured and sdk_installed and credentials_available,
+        "configured": configured,
+        "sdk_installed": sdk_installed,
+        "credentials_available": credentials_available,
+        "project_id": project_id or None,
+        "region": region,
+        "model": model_name,
+        "note": "Credentials and API access are checked when a generation request is made.",
+    }
 
 
 def get_today_intelligence(farm: dict) -> dict:
@@ -129,21 +161,23 @@ def _call_vertex_ai(prompt: str) -> str:
     region = os.environ.get("GCP_REGION") or GCP_REGION
     model_name = os.environ.get("VERTEX_AI_MODEL") or VERTEX_AI_MODEL
 
-    if not project_id:
-        logger.warning("GCP_PROJECT_ID not set, falling back to template explanation")
+    if not project_id or project_id == "your-gcp-project-id":
+        logger.warning("A real GCP_PROJECT_ID is not set, falling back to template explanation")
         return _fallback_explanation(prompt)
 
     try:
+        import google.auth
         import vertexai
         from vertexai.generative_models import GenerativeModel
 
+        google.auth.default(quota_project_id=project_id)
         vertexai.init(project=project_id, location=region)
         model = GenerativeModel(model_name)
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:  # noqa: BLE001 - degrade gracefully in a demo
-        logger.error("Vertex AI call failed (model=%s, project=%s): %s", model_name, project_id, e)
-        return _fallback_explanation(prompt)
+        logger.exception("Vertex AI call failed (model=%s, project=%s)", model_name, project_id)
+        return _fallback_explanation(prompt, str(e))
 
 
 def _call_gemini(prompt: str) -> str:
@@ -151,12 +185,15 @@ def _call_gemini(prompt: str) -> str:
     return _call_vertex_ai(prompt)
 
 
-def _fallback_explanation(prompt: str) -> str:
+def _fallback_explanation(prompt: str, error: str = "") -> str:
     """Used when GCP credentials are unavailable or Vertex AI call fails — keeps the
     demo alive even if the LLM is unavailable."""
-    return ("[Template explanation — set GCP_PROJECT_ID and GCP_REGION for full natural-language "
-            "output] Based on current evidence, please review the flagged data points "
-            "for this recommendation.")
+    if "DefaultCredentialsError" in error or "credentials" in error.lower():
+        return ("[Vertex AI unavailable — configure Google Application Default Credentials] "
+                "Based on current evidence, please review the flagged data points "
+                "for this recommendation.")
+    return ("[Vertex AI unavailable] Based on current evidence, please review the "
+            "flagged data points for this recommendation.")
 
 
 if __name__ == "__main__":

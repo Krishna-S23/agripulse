@@ -4,7 +4,7 @@ evidence into structured recommendations. Kept rule-based (not an LLM call)
 so every recommendation is reproducible and defensible: same input always
 produces the same output, and you can point to the exact rule that fired.
 
-Gemini's job (in orchestrator.py) is ONLY to explain and prioritize these
+Vertex AI's job (in orchestrator.py) is ONLY to explain and prioritize these
 outputs in natural language — never to invent the recommendation itself.
 """
 from typing import Optional
