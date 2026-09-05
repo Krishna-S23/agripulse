@@ -29,7 +29,7 @@ export default function App() {
       <header className="header">
         <div>
           <h1>
-            <span className="agri">Agri</span>
+            <span className="agri">Farm</span>
             <span className="pulse-p">P</span>
             <span className="pulse-u">u</span>
             <span className="pulse-l">l</span>

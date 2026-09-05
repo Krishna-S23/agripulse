@@ -25,7 +25,7 @@ export default function AskBox({ farmId }) {
           type="text"
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
-          placeholder="Ask AgriPulse a question about this farm (e.g., Should I irrigate tomorrow?)"
+          placeholder="Ask FarmPulse a question about this farm (e.g., Should I irrigate tomorrow?)"
           aria-label="Ask AgriPulse a question about this farm"
         />
         <button
