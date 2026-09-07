@@ -19,6 +19,7 @@ import os
 import json
 import logging
 from dotenv import load_dotenv, find_dotenv
+from datetime import date, datetime
 
 load_dotenv(find_dotenv(usecwd=True))
 
@@ -146,14 +147,27 @@ Write the explanation now:"""
 
 
 def _build_qa_prompt(question: str, evidence: dict) -> str:
-    return f"""You are AgriPulse, an agricultural decision-support assistant.
-Answer the farmer's question using ONLY the evidence below. If the evidence
-doesn't fully answer it, say what's missing rather than guessing.
+    """Build a QA prompt with evidence for Vertex AI."""
 
-Question: {question}
-Evidence: {json.dumps(evidence, indent=2)}
+    def serialize_dates(obj):
+        """Convert date/datetime objects to ISO strings."""
+        if isinstance(obj, (date, datetime)):
+            return obj.isoformat()
+        elif isinstance(obj, dict):
+            return {k: serialize_dates(v) for k, v in obj.items()}
+        elif isinstance(obj, (list, tuple)):
+            return [serialize_dates(item) for item in obj]
+        return obj
 
-Answer in 2-4 plain sentences:"""
+    # Serialize dates in evidence before json.dumps
+    evidence_serialized = serialize_dates(evidence)
+
+    return f"""
+    Question: {question}
+    Evidence: {json.dumps(evidence_serialized, indent=2)}
+
+    Based on the evidence above, provide a concise and actionable answer to the farmer's question.
+    """
 
 
 def _call_vertex_ai(prompt: str) -> str:
