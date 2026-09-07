@@ -52,11 +52,11 @@ export function useReportWorkflow() {
     queryKey: ["intelligence", farmId],
     queryFn: () => api.getIntelligence(farmId),
     enabled: Boolean(farmId),
-    retry: 1,
+    retry: false,
   });
   const createFarmMutation = useMutation({
     mutationFn: api.createFarm,
-    retry: 1,
+    retry: false,
     onSuccess: setFarmState,
     onError: setErrorState,
   });
