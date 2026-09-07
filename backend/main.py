@@ -148,6 +148,14 @@ def ask(payload: AskRequest):
         logger.error(f"[/ask] Error processing question: {type(e).__name__}: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Error processing question: {str(e)}")
 
+# The production frontend uses the /api prefix. Keep the original routes
+# available for local clients while exposing the same handlers under /api.
+app.add_api_route("/api/farm", create_farm, methods=["POST"])
+app.add_api_route("/api/farm/{farm_id}", get_farm, methods=["GET"])
+app.add_api_route("/api/farms", list_farms, methods=["GET"])
+app.add_api_route("/api/intelligence/{farm_id}", get_intelligence, methods=["GET"])
+app.add_api_route("/api/ask", ask, methods=["POST"])
+
 
 @app.on_event("startup")
 def startup_event():
@@ -156,7 +164,9 @@ def startup_event():
     logger.info(f"GOOGLE_APPLICATION_CREDENTIALS: {os.environ.get('GOOGLE_APPLICATION_CREDENTIALS', 'NOT SET')}")
     logger.info(f"GOOGLE_CLOUD_PROJECT: {os.environ.get('GOOGLE_CLOUD_PROJECT', 'NOT SET')}")
     logger.info(f"GEMINI_API_KEY present: {'GEMINI_API_KEY' in os.environ}")
-    logger.info(f"DATA_GOV_IN_KEY present: {'DATA_GOV_IN_KEY' in os.environ}")
+    logger.info(
+        f"DATA_GOV_IN_API_KEY present: {'DATA_GOV_IN_API_KEY' in os.environ}"
+    )
     logger.info("=====================================")
 
 
