@@ -80,7 +80,7 @@ export default function RecommendationCard({ rec, crop, index = 0 }) {
         className="evidence-toggle"
         onClick={() => setShowEvidence(!showEvidence)}
       >
-        {showEvidence ? "Hide supporting data" : "View supporting data →"}
+        {showEvidence ? "Hide supporting data" : "View supporting data"}
       </button>
 
       <AnimatePresence initial={false}>

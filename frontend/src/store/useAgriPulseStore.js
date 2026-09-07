@@ -4,12 +4,15 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { api } from "../api.js";
 
 export const useAgriPulseStore = create((set) => ({
+  currentPage: "landing",
   farm: null,
   farmId: null,
   report: null,
   loading: false,
   error: null,
   askAnswer: null,
+  MapsTo: (page) => set({ currentPage: page }),
+  getStarted: () => set({ currentPage: "dashboard" }),
   actions: {
     generateReport: () =>
       set({
