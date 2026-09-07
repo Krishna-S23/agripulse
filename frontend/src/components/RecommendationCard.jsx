@@ -17,6 +17,7 @@ const TITLES = {
   MONITOR_CROP_CONDITION: "Monitor crop condition",
   CHECK_SOIL_DATA: "Check soil data",
   MONITOR_WEATHER: "Monitor weather conditions",
+  CHECK_WEATHER: "Check weather forecast",
 };
 
 const TYPE_ICONS = {
