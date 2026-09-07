@@ -13,7 +13,9 @@ Env vars needed: GCP_PROJECT_ID, RAW_BUCKET, PROCESSED_BUCKET (see gcp_clients.p
 """
 import csv
 import logging
+import tempfile
 from datetime import date, timedelta
+from pathlib import Path
 
 import requests
 
@@ -116,7 +118,7 @@ def run():
         logger.warning("No weather rows fetched — aborting load.")
         return
 
-    local_path = "/tmp/weather_latest.csv"
+    local_path = str(Path(tempfile.gettempdir()) / "weather_latest.csv")
     write_csv(all_rows, local_path)
 
     blob_name = f"weather/{date.today().isoformat()}.csv"

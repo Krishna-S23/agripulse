@@ -13,6 +13,7 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv(usecwd=True))
 
 MOCK_MODE = os.environ.get("AGRIPULSE_MOCK_DATA", "1") == "1"
+PROJECT_ID = os.environ.get("GCP_PROJECT_ID", "")
 LOCAL_STORE_PATH = Path(__file__).parent / "local_farms.json"
 
 _firestore_client = None
@@ -22,7 +23,7 @@ def _get_firestore():
     global _firestore_client
     if _firestore_client is None:
         from google.cloud import firestore
-        _firestore_client = firestore.Client()
+        _firestore_client = firestore.Client(project=PROJECT_ID or None)
     return _firestore_client
 
 

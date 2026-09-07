@@ -10,7 +10,9 @@ Run: python market_ingest.py
 import csv
 import logging
 import os
+import tempfile
 from datetime import date
+from pathlib import Path
 
 import requests
 
@@ -92,7 +94,7 @@ def run():
         logger.warning("No market rows fetched — aborting load.")
         return
 
-    local_path = "/tmp/market_prices_latest.csv"
+    local_path = str(Path(tempfile.gettempdir()) / "market_prices_latest.csv")
     write_csv(all_rows, local_path)
 
     blob_name = f"market_prices/{date.today().isoformat()}.csv"

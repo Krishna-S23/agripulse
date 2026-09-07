@@ -93,6 +93,7 @@ SELECT
   rainfall_mm,
   temperature_c,
   humidity_pct,
+  rain_prob_pct,
   AVG(rainfall_mm) OVER (
     PARTITION BY district ORDER BY UNIX_DATE(date)
     ROWS BETWEEN 6 PRECEDING AND CURRENT ROW

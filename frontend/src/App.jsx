@@ -16,6 +16,12 @@ export default function App() {
   const { report, farmId, loading, error } = useAgriPulseStore();
   const { generateReport } = useReportWorkflow();
 
+  const missingSignals = report
+    ? Object.entries(report.raw_signals || {})
+        .filter(([, signal]) => signal.status === "NO_DATA")
+        .map(([name]) => name)
+    : [];
+
   useEffect(() => {
     if (error) toast.error(error);
   }, [error]);
@@ -54,7 +60,25 @@ export default function App() {
           </h2>
           {report.recommendations.length === 0 ? (
             <div className="empty-state">
-              No signals require attention right now.
+              <strong>No recommendation yet.</strong>
+              <br />
+              <p>
+                The decision engine needs current evidence before it can make a
+                recommendation. Missing data:{" "}
+                {missingSignals.length ? missingSignals.join(", ") : "none"}.
+              </p>
+              {missingSignals.includes("soil") && (
+                <p>
+                  Add a soil reading for this farm in BigQuery, then generate
+                  the report again.
+                </p>
+              )}
+              {missingSignals.includes("market") && (
+                <p>
+                  Run market ingestion to load current prices for this crop and
+                  district.
+                </p>
+              )}
             </div>
           ) : (
             <Row className="recommendation-list">

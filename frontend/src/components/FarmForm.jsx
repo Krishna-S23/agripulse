@@ -2,7 +2,19 @@ import { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 import formImage from "../assets/sunrise_and_field.jpg";
 
-const DISTRICTS = ["Coimbatore", "Erode", "Salem"];
+const DISTRICTS = [
+  "Coimbatore",
+  "Dindigul",
+  "Erode",
+  "Karur",
+  "Madurai",
+  "Namakkal",
+  "Salem",
+  "Theni",
+  "Tiruppur",
+  "Tirunelveli",
+  "Virudhunagar",
+];
 const CROPS = ["Tomato", "Onion"];
 const STAGES = [
   "Nursery",

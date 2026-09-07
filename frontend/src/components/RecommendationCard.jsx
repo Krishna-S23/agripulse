@@ -15,6 +15,8 @@ const TITLES = {
   HOLD_AND_MONITOR: "Hold and monitor market",
   MONITOR_MARKET: "Monitor the market",
   MONITOR_CROP_CONDITION: "Monitor crop condition",
+  CHECK_SOIL_DATA: "Check soil data",
+  MONITOR_WEATHER: "Monitor weather conditions",
 };
 
 const TYPE_ICONS = {

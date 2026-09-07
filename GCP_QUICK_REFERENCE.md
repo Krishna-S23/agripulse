@@ -334,14 +334,14 @@ gcloud compute resources list
 
 ## ❌ Common Errors & Quick Fixes
 
-| Error | Fix |
-|-------|-----|
-| `API not enabled` | `gcloud services enable SERVICE-NAME.googleapis.com` |
-| `Permission denied: BigQuery` | `gcloud projects add-iam-policy-binding PROJECT --member=serviceAccount:... --role=roles/bigquery.dataEditor` |
-| `Image not found` | `gcloud builds submit --tag gcr.io/PROJECT/APP:latest` |
-| `Cloud Run service not found` | Check region: `gcloud run services list --region=us-central1` |
-| `Firestore not initialized` | `gcloud firestore databases create --database=default` |
-| `AGRIPULSE_MOCK_DATA not changing` | Redeploy: `gcloud run deploy SERVICE --set-env-vars AGRIPULSE_MOCK_DATA=0` |
+| Error                              | Fix                                                                                                           |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `API not enabled`                  | `gcloud services enable SERVICE-NAME.googleapis.com`                                                          |
+| `Permission denied: BigQuery`      | `gcloud projects add-iam-policy-binding PROJECT --member=serviceAccount:... --role=roles/bigquery.dataEditor` |
+| `Image not found`                  | `gcloud builds submit --tag gcr.io/PROJECT/APP:latest`                                                        |
+| `Cloud Run service not found`      | Check region: `gcloud run services list --region=us-central1`                                                 |
+| `Firestore not initialized`        | `gcloud firestore databases create --database=default`                                                        |
+| `AGRIPULSE_MOCK_DATA not changing` | Redeploy: `gcloud run deploy SERVICE --set-env-vars AGRIPULSE_MOCK_DATA=0`                                    |
 
 ---
 

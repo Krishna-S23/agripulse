@@ -19,7 +19,7 @@ gcloud services enable \
   --project "$PROJECT_ID"
 
 echo "== Creating BigQuery dataset + tables =="
-bq query --project_id="$PROJECT_ID" --use_legacy_sql=false < bigquery_schema.sql
+bq query --project_id="$PROJECT_ID" --location=asia-south1 --use_legacy_sql=false < bigquery_schema.sql
 
 echo "== Building and deploying to Cloud Run =="
 gcloud builds submit --tag "gcr.io/${PROJECT_ID}/${SERVICE_NAME}" --project "$PROJECT_ID" ..

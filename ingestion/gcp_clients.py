@@ -24,6 +24,35 @@ DATASET = os.environ.get("BQ_DATASET", "agripulse_data")
 RAW_BUCKET = os.environ.get("RAW_BUCKET", "agripulse-raw")
 PROCESSED_BUCKET = os.environ.get("PROCESSED_BUCKET", "agripulse-processed")
 
+TABLE_SCHEMAS = {
+    "weather": [
+        bigquery.SchemaField("date", "DATE", mode="REQUIRED"),
+        bigquery.SchemaField("district", "STRING", mode="REQUIRED"),
+        bigquery.SchemaField("temperature_c", "FLOAT"),
+        bigquery.SchemaField("rainfall_mm", "FLOAT"),
+        bigquery.SchemaField("humidity_pct", "FLOAT"),
+        bigquery.SchemaField("rain_prob_pct", "FLOAT"),
+        bigquery.SchemaField("source", "STRING"),
+    ],
+    "market_prices": [
+        bigquery.SchemaField("date", "DATE", mode="REQUIRED"),
+        bigquery.SchemaField("crop", "STRING", mode="REQUIRED"),
+        bigquery.SchemaField("market", "STRING", mode="REQUIRED"),
+        bigquery.SchemaField("district", "STRING"),
+        bigquery.SchemaField("modal_price", "FLOAT"),
+        bigquery.SchemaField("min_price", "FLOAT"),
+        bigquery.SchemaField("max_price", "FLOAT"),
+        bigquery.SchemaField("arrivals", "FLOAT"),
+    ],
+    "crop_history": [
+        bigquery.SchemaField("year", "INTEGER", mode="REQUIRED"),
+        bigquery.SchemaField("district", "STRING", mode="REQUIRED"),
+        bigquery.SchemaField("crop", "STRING", mode="REQUIRED"),
+        bigquery.SchemaField("production", "FLOAT"),
+        bigquery.SchemaField("yield", "FLOAT"),
+    ],
+}
+
 
 def get_bq_client() -> bigquery.Client:
     return bigquery.Client(project=PROJECT_ID)
@@ -53,7 +82,8 @@ def load_csv_to_bq(gcs_uri: str, table_name: str, write_disposition: str = "WRIT
     job_config = bigquery.LoadJobConfig(
         source_format=bigquery.SourceFormat.CSV,
         skip_leading_rows=1,
-        autodetect=True,
+        schema=TABLE_SCHEMAS.get(table_name),
+        autodetect=table_name not in TABLE_SCHEMAS,
         write_disposition=write_disposition,
     )
     load_job = client.load_table_from_uri(gcs_uri, table_ref, job_config=job_config)
