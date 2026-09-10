@@ -1,0 +1,140 @@
+State,District,Market,Commodity,Variety,Grade,Arrival_Date,Min_x0020_Price,Max_x0020_Price,Modal_x0020_Price
+"Tamil Nadu",Erode,"Perundurai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2200,2500,2350
+"Tamil Nadu",Kallakuruchi,"Sankarapuram(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Krishnagiri,"Denkanikottai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Salem,"Ammapet(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Theni,"Theni(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Thirunelveli,"Kandiyaperi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Salem,"Edapadi (Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2400,2800,2600
+"Tamil Nadu",Thiruchirappalli,"Lalgudi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Madurai,"Chokkikulam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Thiruvarur,"Valangaiman APMC",Tomato,Deshi,Local,10/09/2026,2600,3000,2800
+"Tamil Nadu",Vellore,"Katpadi (Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Pudukkottai,"Aranthangi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Chengalpattu,"Guduvancheri(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Thirupur,"Dharapuram(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,1500,2000,1750
+"Tamil Nadu",Kallakuruchi,"Kallakurichi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Coimbatore,"Singanallur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Cuddalore,"Chidambaram(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Tuticorin,"Tuticorin(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Pudukkottai,"Karambakkudi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Vellore,"Thirupathur APMC",Tomato,Deshi,Local,10/09/2026,3500,3500,3500
+"Tamil Nadu",Dharmapuri,"Harur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu","The Nilgiris","Coonoor(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2600,3000,2800
+"Tamil Nadu",Erode,"Periyar Nagar(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2600,2300
+"Tamil Nadu",Madurai,"Anaiyur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Namakkal,"Kumarapalayam(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2400,3200,2800
+"Tamil Nadu",Namakkal,"Mohanur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,3000,2500
+"Tamil Nadu",Salem,"Mettur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2800,2400
+"Tamil Nadu",Theni,"Chinnamanur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Thirunelveli,"Palayamkottai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Thirupur,"Tiruppur (North) (Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2200,2500,2350
+"Tamil Nadu",Thiruvannamalai,"Chengam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Pudukkottai,"Gandarvakottai(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,3000,3400,3200
+"Tamil Nadu",Karur,"Pallapatti (Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Salem,"Hasthampatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2400,2200
+"Tamil Nadu",Theni,"Bodinayakanur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Salem,"Vazhapadi(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,2400,2800,2600
+"Tamil Nadu",Karur,"Gandhigramam(Uzhavar Sandhai)",Tomato,Other,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Coimbatore,"Udumalpet APMC",Tomato,Deshi,Local,10/09/2026,1800,2400,2100
+"Tamil Nadu",Erode,"Gobichettipalayam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Namakkal,"Tiruchengode APMC",Tomato,Deshi,Local,10/09/2026,2600,3000,2800
+"Tamil Nadu",Coimbatore,"Pollachi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu","The Nilgiris","Gudalur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Dharmapuri,"Dharmapuri(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Dharmapuri,"Palacode(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Dharmapuri,"Pennagaram(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Dindigul,"Chinnalapatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Kancheepuram,"Sunguvarchatram(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Krishnagiri,"Avallapalli(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Namakkal,"Paramathivelur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2800,3300,3050
+"Tamil Nadu",Madurai,"Anna nagar(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Perambalur,"Perambalur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3600,3300
+"Tamil Nadu",Salem,"Mecheri(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,2500,2800,2650
+"Tamil Nadu",Thirunelveli,"Melapalayam(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Thiruvarur,"Muthupettai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2600,2600,2600
+"Tamil Nadu",Cuddalore,"Vadalur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Thanjavur,"Peravurani(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,3200,3200,3200
+"Tamil Nadu",Sivaganga,"Karaikudi(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Thanjavur,"Thanjavur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Thiruchirappalli,"Manachanallur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Thiruchirappalli,"Manapparai(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2600,2600,2600
+"Tamil Nadu",Thiruchirappalli,"Thiruverumbur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Cuddalore,"Viruthachalam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Thiruvarur,"Tiruvarur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2600,2600,2600
+"Tamil Nadu",Villupuram,"Gingee(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2000,2000
+"Tamil Nadu",Thirupur,"Palladam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2400,2200
+"Tamil Nadu",Coimbatore,"Vadavalli(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,2800,2650
+"Tamil Nadu",Pudukkottai,"Ponnamaravathi(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Nagapattinam,"Mayiladuthurai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Ramanathapuram,"Paramakudi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Pudukkottai,"Alangudi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Vadaseri APMC",Tomato,Deshi,Local,10/09/2026,3500,4000,3750
+"Tamil Nadu",Thirupur,"Tiruppur (South) (Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,1500,2000,1750
+"Tamil Nadu",Kancheepuram,"Kundrathur(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu",Krishnagiri,"Hosur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Madurai,"Usilampatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Nagapattinam,"Sirkali(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Namakkal,"Rasipuram(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,3200,3400,3300
+"Tamil Nadu",Madurai,"Palanganatham(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Thiruchirappalli,"Thuraiyur APMC",Tomato,Local,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Salem,"Thammampatti (Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2800,2400
+"Tamil Nadu",Thirunelveli,"NGO Colony(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Thirupur,"Kangayam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2200,2100
+"Tamil Nadu",Thiruvannamalai,"Keelpennathur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Thiruvannamalai,"Vandavasi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Theni,"Devaram(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2400,2400
+"Tamil Nadu",Salem,"Elampillai(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2400,2800,2600
+"Tamil Nadu",Salem,"Jalagandapuram(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2000,2400,2200
+"Tamil Nadu",Sivaganga,"Singampunari(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Sivaganga,"Tirupatthur(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Virudhunagar,"Thalavaipuram(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Villupuram,"Ulundurpettai APMC",Tomato,Deshi,Local,10/09/2026,2500,2500,2500
+"Tamil Nadu","The Nilgiris","Udhagamandalam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,2800,2650
+"Tamil Nadu",Madurai,"Melur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Vellore,"Perampet(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,1500,1800,1650
+"Tamil Nadu",Karur,"Kulithalai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Theni,"Periyakulam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Erode,"Sampath Nagar(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2200,2600,2400
+"Tamil Nadu",Thiruvannamalai,"Arani(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Thiruvannamalai,"Polur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Tuticorin,"Kovilpatti(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Vellore,"Gudiyatham(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2400,2400
+"Tamil Nadu",Thiruvannamalai,"Cheyyar(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Coimbatore,"RSPuram(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,2700,2600
+"Tamil Nadu",Coimbatore,"Kurichi(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Chengalpattu,"Thirukalukundram(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Vellore,"Vellore APMC",Tomato,Deshi,Local,10/09/2026,2400,2600,2500
+"Tamil Nadu",Krishnagiri,"Kaveripattinam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,3000,3000,3000
+"Tamil Nadu",Dharmapuri,"Karimangalam(Uzhavar Sandhai)",Tomato,Local,Local,10/09/2026,2300,2500,2400
+"Tamil Nadu",Thanjavur,"Tirukattupalli(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800
+"Tamil Nadu",Ranipet,"Arcot(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2400,2400
+"Tamil Nadu",Salem,"Sooramangalam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2600,2800,2700
+"Tamil Nadu",Salem,"Thathakapatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2800,2600
+"Tamil Nadu",Theni,"Kambam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2500,2450
+"Tamil Nadu",Thiruvannamalai,"Tamarainagar(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Coimbatore,"Sulur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Dharmapuri,"AJattihalli(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2600,2300
+"Tamil Nadu",Karur,"Velayuthampalayam(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2400,3000,2700
+"Tamil Nadu",Salem,"Attayampatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Sivaganga,"Devakottai (Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2600,3000,2800
+"Tamil Nadu",Thanjavur,"Pattukottai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3200,3200,3200
+"Tamil Nadu",Virudhunagar,"Rajapalayam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Chengalpattu,"Nanganallur(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Myladi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Villupuram,"Tindivanam APMC",Tomato,Deshi,Local,10/09/2026,2000,2000,2000
+"Tamil Nadu",Erode,"Thalavadi(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2200,2500,2350
+"Tamil Nadu",Krishnagiri,"Krishnagiri(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,1600,2000,1800
+"Tamil Nadu",Theni,"Andipatti(Uzhavar Sandhai )",Tomato,Other,Local,10/09/2026,2300,2500,2400
+"Tamil Nadu",Virudhunagar,"Kariyapatti(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Madurai,"Thirumangalam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2600,2300
+"Tamil Nadu",Thirupathur,"Natrampalli(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Salem,"Athur(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Ramanathapuram,"Kamuthi(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2500,3000,2750
+"Tamil Nadu",Thiruvannamalai,"Tiruvannamalai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2000,2500,2250
+"Tamil Nadu",Vellore,"Kahithapattarai(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2400,2400,2400
+"Tamil Nadu",Ariyalur,"Ariyalur(Uzhavar Sandhai)",Tomato,Deshi,Local,10/09/2026,3000,3500,3250
+"Tamil Nadu",Coimbatore,"Sundarapuram(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2500,2800,2650
+"Tamil Nadu",Erode,"Sathiyamagalam(Uzhavar Sandhai )",Tomato,Local,Local,10/09/2026,2000,2600,2300
+"Tamil Nadu",Coimbatore,"Mettupalayam(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,3200,3000
+"Tamil Nadu",Cuddalore,"Cuddalore(Uzhavar Sandhai )",Tomato,Deshi,Local,10/09/2026,2800,2800,2800

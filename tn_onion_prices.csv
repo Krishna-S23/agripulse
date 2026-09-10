@@ -1,0 +1,265 @@
+State,District,Market,Commodity,Variety,Grade,Arrival_Date,Min_x0020_Price,Max_x0020_Price,Modal_x0020_Price
+"Tamil Nadu",Thirupur,"Tiruppur (South) (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4000,5000,4500
+"Tamil Nadu",Dharmapuri,"Palacode(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6400,6200
+"Tamil Nadu",Dharmapuri,"Pennagaram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6200,6500,6350
+"Tamil Nadu",Kallakuruchi,"Sankarapuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Perambalur,"Perambalur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6600,7000,6800
+"Tamil Nadu",Salem,"Mettur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6500,5750
+"Tamil Nadu",Salem,"Thathakapatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6400,6200
+"Tamil Nadu",Thirunelveli,"Palayamkottai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5600,6200,5900
+"Tamil Nadu",Coimbatore,"Sulur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Pudukkottai,"Gandarvakottai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Dharmapuri,"AJattihalli(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6400,5950
+"Tamil Nadu",Salem,"Hasthampatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Chengalpattu,"Nanganallur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Myladi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Cuddalore,"Viruthachalam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,5500,5500
+"Tamil Nadu",Virudhunagar,"Kariyapatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Vellore,"Katpadi (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6200,6200,6200
+"Tamil Nadu",Madurai,"Thirumangalam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Pudukkottai,"Aranthangi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Vellore,"Perampet(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,5600,5600,5600
+"Tamil Nadu",Thirupur,"Dharapuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6200,5850
+"Tamil Nadu",Coimbatore,"Udumalpet APMC",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Nagapattinam,"Mayiladuthurai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4500,5000,4750
+"Tamil Nadu",Ramanathapuram,"Paramakudi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6400,6200
+"Tamil Nadu",Thiruvarur,"Mannargudi II(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Vellore,"Gudiyatham(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Coimbatore,"Sundarapuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,5800,5650
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Vadaseri APMC",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Vellore,"Thirupathur APMC",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Erode,"Perundurai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Dharmapuri,"Karimangalam(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Nagapattinam,"Sirkali(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Madurai,"Anna nagar(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6800,6400
+"Tamil Nadu",Salem,"Ammapet(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Salem,"Sooramangalam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Thirupur,"Kangayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4400,4800,4600
+"Tamil Nadu",Thanjavur,"Peravurani(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,4600,6000,5300
+"Tamil Nadu",Theni,"Devaram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Thanjavur,"Pattukottai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4600,6000,5300
+"Tamil Nadu",Virudhunagar,"Thalavaipuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6500,6000
+"Tamil Nadu",Villupuram,"Tindivanam APMC",Onion,Bellary,Local,10/09/2026,5800,5800,5800
+"Tamil Nadu",Villupuram,"Ulundurpettai APMC",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Madurai,"Chokkikulam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4000,7000,5500
+"Tamil Nadu",Krishnagiri,"Krishnagiri(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Pudukkottai,"Pudukottai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Coimbatore,"Vadavalli(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5200,5700,5450
+"Tamil Nadu",Erode,"Sathiyamagalam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Coimbatore,"Mettupalayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6400,6200
+"Tamil Nadu",Coimbatore,"Singanallur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Coimbatore,"Pollachi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Tuticorin,"Tuticorin(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Vellore,"Vellore APMC",Onion,Bellary,Local,10/09/2026,5000,5800,5400
+"Tamil Nadu",Krishnagiri,"Kaveripattinam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,5000,5000
+"Tamil Nadu",Dharmapuri,"Dharmapuri(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6200,6400,6300
+"Tamil Nadu",Dindigul,"Palani(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6500,5750
+"Tamil Nadu",Krishnagiri,"Hosur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Namakkal,"Mohanur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5600,6500,6050
+"Tamil Nadu",Namakkal,"Namakkal(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5800,6400,6100
+"Tamil Nadu",Salem,"Thammampatti (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6500,6000
+"Tamil Nadu",Theni,"Chinnamanur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6400,6400,6400
+"Tamil Nadu",Theni,"Theni(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6200,5600
+"Tamil Nadu",Thirupur,"Tiruppur (North) (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,5800,5650
+"Tamil Nadu",Thiruvannamalai,"Chengam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Thiruvannamalai,"Keelpennathur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Thiruvannamalai,"Vandavasi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Cuddalore,"Vadalur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Sivaganga,"Sivagangai (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6600,7000,6800
+"Tamil Nadu",Sivaganga,"Devakottai (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,7000,7400,7200
+"Tamil Nadu",Sivaganga,"Karaikudi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4500,7000,5750
+"Tamil Nadu",Sivaganga,"Tirupatthur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Thanjavur,"Thanjavur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6800,6400
+"Tamil Nadu",Erode,"Thalavadi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Theni,"Bodinayakanur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Kallakuruchi,"Kallakurichi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Thiruvannamalai,"Arani(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Thiruvannamalai,"Polur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Ariyalur,"Ariyalur(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,5000,5500,5250
+"Tamil Nadu",Namakkal,"Tiruchengode APMC",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Cuddalore,"Cuddalore(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,7000,6500
+"Tamil Nadu","The Nilgiris","Coonoor(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6400,6200
+"Tamil Nadu",Kancheepuram,"Kundrathur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,5000,5000
+"Tamil Nadu",Kancheepuram,"Sunguvarchatram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,5000,5000
+"Tamil Nadu",Krishnagiri,"Avallapalli(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Krishnagiri,"Denkanikottai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Madurai,"Anaiyur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Madurai,"Usilampatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Namakkal,"Paramathivelur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6800,6400
+"Tamil Nadu",Namakkal,"Rasipuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Madurai,"Palanganatham(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4000,7000,5500
+"Tamil Nadu",Salem,"Edapadi (Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Salem,"Elampillai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Salem,"Jalagandapuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Thiruchirappalli,"Manachanallur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Thiruchirappalli,"Manapparai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Thiruchirappalli,"Musiri(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Thiruchirappalli,"Thiruverumbur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Madurai,"Melur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Salem,"Vazhapadi(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Karur,"Gandhigramam(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Chengalpattu,"Guduvancheri(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Thirupathur,"Natrampalli(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Salem,"Athur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6500,6000
+"Tamil Nadu",Theni,"Periyakulam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5800,6200,6000
+"Tamil Nadu",Pudukkottai,"Ponnamaravathi(Uzhavar Sandhai)",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Pudukkottai,"Alangudi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Tuticorin,"Kovilpatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Thiruvannamalai,"Cheyyar(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Cuddalore,"Chidambaram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,5000,5000
+"Tamil Nadu","The Nilgiris","Gudalur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Dindigul,"Chinnalapatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Namakkal,"Kumarapalayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,2800,3000,2900
+"Tamil Nadu",Thanjavur,"Tirukattupalli(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6400,6800,6600
+"Tamil Nadu",Ranipet,"Arcot(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Thiruchirappalli,"Thuraiyur APMC",Onion,Bellary,Local,10/09/2026,5500,6500,6000
+"Tamil Nadu",Theni,"Kambam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5800,6000,5900
+"Tamil Nadu",Thirunelveli,"Melapalayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6200,5600
+"Tamil Nadu",Thiruvarur,"Muthupettai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Sivaganga,"Singampunari(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,4200,6600,5400
+"Tamil Nadu",Thiruchirappalli,"Lalgudi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6800,6400
+"Tamil Nadu",Virudhunagar,"Rajapalayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6500,6250
+"Tamil Nadu","The Nilgiris","Udhagamandalam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5800,6200,6000
+"Tamil Nadu",Theni,"Andipatti(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5800,6000,5900
+"Tamil Nadu",Villupuram,"Gingee(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Karur,"Kulithalai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5600,6000,5800
+"Tamil Nadu",Erode,"Gobichettipalayam(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6800,6400
+"Tamil Nadu",Erode,"Sampath Nagar(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6600,7000,6800
+"Tamil Nadu",Thiruvannamalai,"Tiruvannamalai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Vellore,"Kahithapattarai(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Coimbatore,"RSPuram(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5400,5700,5550
+"Tamil Nadu",Coimbatore,"Kurichi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5500,5800,5650
+"Tamil Nadu",Pudukkottai,"Karambakkudi(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Dharmapuri,"Harur(Uzhavar Sandhai )",Onion,Bellary,Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Dharmapuri,"Pennagaram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5500,6000,5750
+"Tamil Nadu",Erode,"Periyar Nagar(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Kallakuruchi,"Sankarapuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7000,7000
+"Tamil Nadu",Nagapattinam,"Sirkali(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,10000,9500
+"Tamil Nadu",Madurai,"Palanganatham(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Salem,"Thathakapatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,6800,6650
+"Tamil Nadu",Thirunelveli,"Kandiyaperi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5500,7800,6650
+"Tamil Nadu",Thirupur,"Tiruppur (North) (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Thiruvannamalai,"Chengam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,8000,7000
+"Tamil Nadu",Salem,"Jalagandapuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6400,6800,6600
+"Tamil Nadu",Krishnagiri,"Krishnagiri(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu","The Nilgiris","Udhagamandalam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Theni,"Bodinayakanur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,7500,7500
+"Tamil Nadu",Thiruvarur,"Valangaiman APMC","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Karur,"Kulithalai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Thiruvannamalai,"Arani(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Coimbatore,"Mettupalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8400,8200
+"Tamil Nadu",Coimbatore,"RSPuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Coimbatore,"Pollachi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8500,8000
+"Tamil Nadu",Dharmapuri,"Palacode(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Dindigul,"Chinnalapatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Dharmapuri,"Karimangalam(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Namakkal,"Namakkal(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,4000,8000,6000
+"Tamil Nadu",Perambalur,"Perambalur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,4000,7000,5500
+"Tamil Nadu",Salem,"Mettur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Theni,"Kambam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7500,7000
+"Tamil Nadu",Thirunelveli,"Melapalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5500,7800,6650
+"Tamil Nadu",Karur,"Pallapatti (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Salem,"Edapadi (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Salem,"Elampillai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Sivaganga,"Singampunari(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8200,8600,8400
+"Tamil Nadu",Thanjavur,"Pattukottai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7800,7800,7800
+"Tamil Nadu",Virudhunagar,"Rajapalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Villupuram,"Ulundurpettai APMC","Onion Green","Onion Green",Local,10/09/2026,7000,7000,7000
+"Tamil Nadu",Erode,"Thalavadi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Vellore,"Katpadi (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Madurai,"Melur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Salem,"Vazhapadi(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Tuticorin,"Kovilpatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8500,9000,8750
+"Tamil Nadu",Erode,"Sathiyamagalam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7400,7200
+"Tamil Nadu",Coimbatore,"Singanallur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8200,8600,8400
+"Tamil Nadu",Coimbatore,"Kurichi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8600,8300
+"Tamil Nadu",Tuticorin,"Tuticorin(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Pudukkottai,"Karambakkudi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Vellore,"Thirupathur APMC","Onion Green","Onion Green",Local,10/09/2026,7500,7500,7500
+"Tamil Nadu",Vellore,"Vellore APMC","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Dharmapuri,"Harur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu","The Nilgiris","Coonoor(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Erode,"Perundurai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Kancheepuram,"Sunguvarchatram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Namakkal,"Paramathivelur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8200,9000,8600
+"Tamil Nadu",Namakkal,"Rasipuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,8500,6750
+"Tamil Nadu",Madurai,"Anna nagar(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Salem,"Mecheri(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Ranipet,"Arcot(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,9000,9000
+"Tamil Nadu",Thirunelveli,"Palayamkottai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7800,6900
+"Tamil Nadu",Thirupur,"Kangayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Thiruvannamalai,"Vandavasi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Pudukkottai,"Gandarvakottai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Theni,"Devaram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7000,7000
+"Tamil Nadu",Salem,"Attayampatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6200,6800,6500
+"Tamil Nadu",Sivaganga,"Karaikudi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8500,9000,8750
+"Tamil Nadu",Thiruchirappalli,"Manachanallur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Theni,"Andipatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Villupuram,"Gingee(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,7500,7500
+"Tamil Nadu",Madurai,"Thirumangalam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Pudukkottai,"Aranthangi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,9000,8500
+"Tamil Nadu",Thirupur,"Palladam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Kallakuruchi,"Kallakurichi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Thirupathur,"Natrampalli(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Salem,"Athur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5500,7000,6250
+"Tamil Nadu",Thiruvannamalai,"Tiruvannamalai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,10000,9000
+"Tamil Nadu",Vellore,"Kahithapattarai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,11000,11000,11000
+"Tamil Nadu",Cuddalore,"Cuddalore(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7000,7000
+"Tamil Nadu",Krishnagiri,"Kaveripattinam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Kancheepuram,"Kundrathur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6000,6000
+"Tamil Nadu",Krishnagiri,"Denkanikottai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,10000,9500
+"Tamil Nadu",Madurai,"Anaiyur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Namakkal,"Kumarapalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,7000,6000
+"Tamil Nadu",Namakkal,"Mohanur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,3400,8000,5700
+"Tamil Nadu",Thiruchirappalli,"Thuraiyur APMC","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Theni,"Chinnamanur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Theni,"Theni(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Dharmapuri,"AJattihalli(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Sivaganga,"Devakottai (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8500,9000,8750
+"Tamil Nadu",Salem,"Hasthampatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6400,6800,6600
+"Tamil Nadu",Thiruchirappalli,"Lalgudi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Thiruchirappalli,"Thiruverumbur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Myladi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8500,9000,8750
+"Tamil Nadu",Virudhunagar,"Kariyapatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Coimbatore,"Vadavalli(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Coimbatore,"Udumalpet APMC","Onion Green","Onion Green",Local,10/09/2026,6000,8400,7200
+"Tamil Nadu",Erode,"Gobichettipalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7800,7400
+"Tamil Nadu",Erode,"Sampath Nagar(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Pudukkottai,"Ponnamaravathi(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Nagapattinam,"Mayiladuthurai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7000,6500
+"Tamil Nadu",Thiruvannamalai,"Polur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Ariyalur,"Ariyalur(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Coimbatore,"Sundarapuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8600,8300
+"Tamil Nadu",Cuddalore,"Chidambaram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Thirupur,"Tiruppur (South) (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,9000,8500
+"Tamil Nadu",Dharmapuri,"Dharmapuri(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6800,7200,7000
+"Tamil Nadu",Krishnagiri,"Avallapalli(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,10000,9500
+"Tamil Nadu",Krishnagiri,"Hosur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,10000,9500
+"Tamil Nadu",Madurai,"Usilampatti(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Salem,"Ammapet(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6500,7000,6750
+"Tamil Nadu",Salem,"Sooramangalam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,6500,6250
+"Tamil Nadu",Salem,"Thammampatti (Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,6800,5900
+"Tamil Nadu",Thiruvannamalai,"Tamarainagar(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,10000,9000
+"Tamil Nadu",Thiruvarur,"Muthupettai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Coimbatore,"Sulur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8200,8600,8400
+"Tamil Nadu",Cuddalore,"Vadalur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8000,8000
+"Tamil Nadu",Thanjavur,"Peravurani(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,7200,7200,7200
+"Tamil Nadu",Karur,"Velayuthampalayam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Sivaganga,"Tirupatthur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8500,9000,8750
+"Tamil Nadu",Thanjavur,"Thanjavur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8800,8800,8800
+"Tamil Nadu",Thiruchirappalli,"Manapparai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu",Virudhunagar,"Thalavaipuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,6000,7500,6750
+"Tamil Nadu",Chengalpattu,"Nanganallur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,10000,9500
+"Tamil Nadu",Madurai,"Chokkikulam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
+"Tamil Nadu",Cuddalore,"Viruthachalam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,9000,9000
+"Tamil Nadu",Pudukkottai,"Pudukottai(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,9000,8500
+"Tamil Nadu",Karur,"Gandhigramam(Uzhavar Sandhai)","Onion Green","Onion Green",Local,10/09/2026,7500,8000,7750
+"Tamil Nadu",Thirupur,"Dharapuram(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5500,7000,6250
+"Tamil Nadu",Theni,"Periyakulam(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,7000,7500,7250
+"Tamil Nadu",Ramanathapuram,"Paramakudi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,9000,8500
+"Tamil Nadu",Pudukkottai,"Alangudi(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,9000,8500
+"Tamil Nadu",Vellore,"Gudiyatham(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,9000,9000,9000
+"Tamil Nadu",Thiruvannamalai,"Cheyyar(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,5000,6000,5500
+"Tamil Nadu",Namakkal,"Tiruchengode APMC","Onion Green","Onion Green",Local,10/09/2026,7000,8000,7500
+"Tamil Nadu","Nagercoil (Kannyiakumari)","Vadaseri APMC","Onion Green","Onion Green",Local,10/09/2026,9000,9500,9250
+"Tamil Nadu","The Nilgiris","Gudalur(Uzhavar Sandhai )","Onion Green","Onion Green",Local,10/09/2026,8000,8500,8250
